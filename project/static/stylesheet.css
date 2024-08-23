@@ -1,0 +1,54 @@
+/* Style for the body to ensure everything is centered and well-spaced */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+    background-color: #f0f0f0;        /* Light grey background for the whole page */
+    text-align: center;               /* Center-align the text and buttons */
+    padding: 20px;                    /* Add padding around the body content */
+}
+
+/* Style for the buttons */
+input[type="button"] {
+    background-color: #4CAF50; /* Green background */
+    border: none;              /* Remove default borders */
+    color: white;              /* White text */
+    padding: 10px 20px;        /* Add padding inside the button */
+    text-align: center;        /* Center the text inside the button */
+    text-decoration: none;     /* Remove underline from text */
+    display: inline-block;     /* Display buttons inline */
+    font-size: 16px;           /* Increase the font size */
+    margin: 10px 5px;          /* Add some margin between buttons */
+    cursor: pointer;           /* Change cursor to pointer when hovering */
+    border-radius: 5px;        /* Slightly round the corners of the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+input[type="button"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Style for the div containers holding the image */
+.div_container {
+    border: 2px solid #ddd; /* Light grey border */
+    width: 200px;            /* Fixed width */
+    height: 200px;           /* Fixed height */
+    margin: 20px 10px;       /* Add margin for spacing between divs */
+    display: inline-block;   /* Display divs in a horizontal line */
+    background-color: white; /* White background for the divs */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    border-radius: 10px;     /* Rounded corners */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for div containers */
+.div_container:hover {
+    transform: scale(1.05); /* Slightly increase size when hovered */
+}
+
+/* Style for the image inside the containers */
+img {
+    width: 100%;             /* Make the image fill the container */
+    height: 100%;            /* Ensure the image maintains the container height */
+    border-radius: 10px;     /* Match the rounded corners of the div */
+    object-fit: cover;       /* Ensure the image covers the entire container */
+}

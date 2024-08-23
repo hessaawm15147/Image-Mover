@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mover</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet.css' %}">
+    
+    <!-- jQuery CDN for easy DOM manipulation -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <!-- Link to custom JavaScript file -->
+    <script src="{% static 'main.js' %}" defer></script>
+</head>
+<body>
+
+    <!-- Button to move the image forward to the next div -->
+    <input type="button" value="Move" id="button1">
+    
+    <!-- Button to move the image backward to the previous div -->
+    <input type="button" value="Move Back" id="button2">
+
+    <!-- Div containers to hold the image; initially in div1 -->
+    <div id="div1" class="div_container">
+        <img id="img1" src="{% static 'p5.jpeg' %}" alt="Image">
+    </div>
+    <div id="div2" class="div_container"></div>
+    <div id="div3" class="div_container"></div>
+    <div id="div4" class="div_container"></div>
+    
+</body>
+</html>
